@@ -33,7 +33,7 @@ const Header = () => {
 
   const [actionButton, setActionButton] = useState({
     title: "Download CV",
-    link: "https://drive.google.com/file/d/1ar7ZSfXhklYaJ3twTEda8duaOhsErjbi/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1ooOp7tXZb0DBT11kdjy2pCBLTmUcR8pl/view?usp=sharing",
   });
 
   return (

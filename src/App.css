@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.moveArrow {
+  animation-name : mymove;
+  animation-iteration-count : infinite;
+  animation-direction : alternate;
+  animation-duration : 1s;
+}
+
+@keyframes mymove {
+  from {transform: translateY(0px);}
+  to {transform: translateY(20px)};}
+
+.icons a:hover{
+  animation-name : App-logo-spin;
+  animation-iteration-count : infinite;
+  /* animation-direction : alternate; */
+  animation-duration : 1s;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

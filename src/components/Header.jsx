@@ -38,44 +38,29 @@ const Header = () => {
 
   return (
     <>
-      <div className="h-20 border main flex justify-between items-center px-16 bg-gray-100">
+      <div className="h-20 border main flex justify-between items-center md:px-16 bg-gray-100 px-4">
         <div>
           {/* brand logo */}
           <h1 className="text-2xl font-bold">{brandName}</h1>
         </div>
 
-        <div className="space-x-6 ">
+        <div className="md:space-x-6 md:block hidden text-xl ">
           {/* menu links */}
 
           {menuLinks.map((link) => (
-            <a key={link.id} href={link.link} className="hover:text-orange-600">
+            <a key={link.id} href={link.link} className="hover:text-orange-600 text-xl">
               {link.title}
             </a>
           ))}
 
-          {/* 
-          <a href="/about" className="hover:text-orange-600">
-            About
-          </a>
-
-          <a href="/skills" className="hover:text-orange-600">
-            Skills
-          </a>
-
-          <a href="/Portfolio" className="hover:text-orange-600">
-            Portfolio
-          </a>
-
-          <a href="/contact" className="hover:text-orange-600">
-            Contact
-          </a> */}
+  
         </div>
 
         <div>
           {/* buttons */}
           <a
             href={actionButton.link} target="_blank"
-            className="px-4 py-2 bg-orange-500 shadow  rounded-full text-1xl "
+            className="px-4 py-3 bg-orange-500 shadow  rounded-full text-1xl "
           >
             {actionButton.title}
           </a>
@@ -84,5 +69,6 @@ const Header = () => {
     </>
   );
 };
+
 
 export default Header;
